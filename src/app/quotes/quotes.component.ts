@@ -8,12 +8,12 @@ import {Quotes} from '../quotes'
 })
 export class QuotesComponent implements OnInit {
     quotes = [
-  new Quotes(1,'Watch Finding Nemo','Find an online version and watch merlin find his son','Find an online version and watch merlin find his son',new Date(2018,3,14) ),
-  new Quotes(2,'Buy Cookies','I have to buy cookies for the parrot','I have to buy cookies for the parrot',new Date(2018,6,9) ),
-  new Quotes(3, 'Get new Phone Case','Diana has her birthday coming up soon','Diana has her birthday coming up soon',new Date(2018,1,12) ),
-  new Quotes(4, 'Get Dog Food','Pupper likes expensive sancks', 'Pupper likes expensive sancks',new Date(2018,0,18) ),
-  new Quotes(5, 'Solve math homework','Damn Math', 'Damn Math',new Date(2018,2,14) ),
-  new Quotes(6, 'Plot my world domination plan','Cause I am an evil overlord','Cause I am an evil overlord',new Date(2018,3,14) ),
+  new Quotes(1,'There is nothing permanent except change','Find an online version and watch merlin find his son','Heraclitus',new Date(2018,3,14) ),
+  new Quotes(2,'You cannot shake hands with a clenched fist','I have to buy cookies for the parrot','Indira Gandthi',new Date(2018,6,9) ),
+  new Quotes(3, 'Learning never exhausts the mind','Diana has her birthday coming up soon','Leonardo da Vinci',new Date(2018,1,12) ),
+  new Quotes(4, 'If you cannot do great things do small things in a great way','Pupper likes expensive sancks', 'Napoleon Hill',new Date(2018,0,18) ),
+  new Quotes(5, 'The supreme art of war is to subdue your enemy without fighting','Damn math', 'Sun Tzu',new Date(2018,2,14) ),
+  new Quotes(6, 'You cannot blame gravity for falling in love',' am an evil overlord','ALbert Einstein',new Date(2018,3,14) ),
     ]
     toogleDetails(index){
        this.quotes[index].showDescription = !this.quotes[index].showDescription;

@@ -1,22 +1,14 @@
 <p>
-  quote-form works!
+  please fill in the quote-form below in fields as required!
 </p>
 <div class="container-fluid">
     <div class="row">
         <form (ngSubmit)='submitQuote()'#quoteForm= 'ngForm'>
+
             <div class="form-group">
 
-                <label for="name">insert quote</label>
-                <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
-                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                   <p> Name is Required</p>
-               </div>
-Display {{newQuote.name}}
-            </div>
-            <div class="form-group">
-
-                <label for="Quoter">enter authors name</label>
-                <textarea class="form-control" id="userQuote" rows="4" [(ngModel)]="newQuote.userQuote" userQuote="userQuote" #userQuote="ngModel" required></textarea>
+                <label for="Quoter">Enter Authors Name</label>
+                <input type="text" required class="form-control" id="userQuote" [(ngModel)]="newQuote.userQuote" userQuote="userQuote" #userQuote="ngModel" required>
                 <div [hidden]="userQuote.valid || userQuote.pristine" class="alert alert-danger">
                    <p> authors name is Required</p>
                </div>
@@ -24,21 +16,30 @@ Display {{newQuote.name}}
             </div>
             <div class="form-group">
 
-                <label for="description">enter quoters name</label>
-                <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" description="description" #description="ngModel" required></textarea>
+                <label for="description">Enter Quoters Name</label>
+                <input type="text" required class="form-control" id="description"  [(ngModel)]="newQuote.description" description="description" #description="ngModel" required>
                 <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
                    <p> your name is Required</p>
                </div>
             </div>
             <div class="form-group">
-                <label for="complete">enter date posted</label>
-                <input type='date' id="date" [(ngModel)]="newQuote.date" date="date" #date="ngModel" required>
-                <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
+
+                <label for="name">Insert Quote</label>
+                <textarea class="form-control" id="name" rows="3" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required></textarea>
+                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                   <p> Name is Required</p>
+               </div>
+Display {{newQuote.name}}
+            </div>
+            <div class="form-group">
+                <label for="complete">Enter date Posted :</label>
+                <input type='date' id="completeDate" [(ngModel)]="newQuote.completeDate" completeDate="completeDate" #completeDate="ngModel" required>
+                <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
                 <p> Date of posting is Required</p>
 
                 </div>
             </div>
-            <button type="Submit" class="btn btn-success btn-lg">Add quote</button>
+            <button type="Submit" class="btn btn-success btn-sm">Add quote</button>
         </form>
     </div>
 </div>
