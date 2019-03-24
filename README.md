@@ -2,6 +2,30 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
+### By Niklauspeter
+
+##  Description
+
+This is an application that allows users to view famous quotes that have been input by other users as well as add and delete their own quotes. The application also creates a provision for liking or disliking quotes to see which ones are most popular
+
+## Prerequisites
+
+To develop the application , youll need to preinstall a few application. including
+* Node.js
+* Angular Framework
+* Watchman
+
+## Technologies Used
+* Angular framework version 7
+* Typescript
+* javascript
+* CSS  
+
+## Setup Information
+
+## Contact Information
+for any enquiries email me at oriokiklaus@gmail.com or github username niklauspeter
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
