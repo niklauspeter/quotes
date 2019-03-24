@@ -11,7 +11,7 @@ export class QuoteDetailsComponent implements OnInit {
   constructor() { }
   @Output() isComplete= new EventEmitter<boolean>();
 
-goalComplete(complete:boolean){
+quoteDelete(complete:boolean){
   this.isComplete.emit(complete);
 }
   ngOnInit() {
