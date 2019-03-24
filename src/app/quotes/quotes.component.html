@@ -4,5 +4,6 @@
 <div *ngFor="let quote of quotes">
 <ul>
   <li>{{quote.name}}</li>
+  <app-quote-details [quote]='quote'></app-quote-details>
 </ul>
 </div>
