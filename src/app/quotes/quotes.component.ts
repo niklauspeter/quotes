@@ -15,6 +15,15 @@ export class QuotesComponent implements OnInit {
   new Quotes(5, 'Solve math homework','Damn Math', 'Damn Math',new Date(2018,2,14) ),
   new Quotes(6, 'Plot my world domination plan','Cause I am an evil overlord','Cause I am an evil overlord',new Date(2018,3,14) ),
     ]
+    toogleDetails(index){
+       this.quotes[index].showDescription = !this.quotes[index].showDescription;
+   }
+   completeGoal(isComplete,index){
+       if (isComplete){
+           this.quotes.splice(index,1);
+           }
+           }
+
     constructor() { }
 
   ngOnInit() {
