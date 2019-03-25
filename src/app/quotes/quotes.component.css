@@ -30,3 +30,8 @@
 .ntn{
   font-family: 'Courgette', cursive;
 }
+#formSection{
+  background-image: url("image/black.jpg");
+  color: white;
+
+}

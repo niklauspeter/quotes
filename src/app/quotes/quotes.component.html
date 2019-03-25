@@ -7,11 +7,17 @@
   <h3><span class="idNumber">{{quote.id}}</span></h3>
   <p><span class="quoteFont">{{quote.name}}</span></p>
   <p><span class="blue">{{quote.userQuote}}</span></p>
+  <button class="ntn btn-succes btn-sm"  (click)="quote.thumbsUp = quote.thumbsUp+1">like {{quote.thumbsUp}}</button><button class="ntn btn-succes btn-sm"  (click)="quote.thumbsDown = quote.thumbsDown-1">dislike {{quote.thumbsDown}}</button>
   <button class="ntn btn-succes btn-sm"  (click)='toogleDetails(i)'>cick to see more details</button>
 
   <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
 </div>
 </div>
+
 <div class="row">
+  <div class="col-md-12">
+  <section id="formSection">
       <app-quote-form (addQuote)= "addNewQuote($event)"></app-quote-form>
+      </section>
+      </div>
   </div>

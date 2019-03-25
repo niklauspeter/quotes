@@ -27,7 +27,9 @@ export class QuotesComponent implements OnInit {
          }
        }
     }
-
+      thumbsUp(index){
+        this.quotes[index].thumbsUp = this.quotes[index].thumbsUp++
+      }
     addNewQuote(quote){
         let quoteLength = this.quotes.length;
         quote.id=quoteLength+1;
