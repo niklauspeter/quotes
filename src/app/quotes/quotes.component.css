@@ -1,0 +1,32 @@
+.row{
+  margin-top: 50px;
+}
+.col-md-4 {
+  margin-top: 50px;
+  border-width: 30px;
+  border-spacing: 30px;
+  border-color: black;
+  border: 1px solid #666;
+ padding: 17px;
+
+}
+.blue{
+  color: blue;
+}
+.idNumber{
+   font-family: 'Courgette', cursive;
+   color: blue;
+   width: 400px;
+   line-height: 40px;
+   border-radius: 50%;
+   text-align: center;
+   font-size: 32px;
+   border: 2px solid #666;
+}
+.quoteFont{
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
+}
+.ntn{
+  font-family: 'Courgette', cursive;
+}

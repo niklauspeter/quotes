@@ -1,18 +1,15 @@
-<p>
-  quotes works!
-</p>
+
 <div class="container">
 
   <div class="row">
 
 <div *ngFor="let quote of quotes ;let i = index" class="col-md-4 no-pad">
-
-
-  <p>{{quote.name}}</p>
-  <button class="btn-succes btn-sm"  (click)='toogleDetails(i)'>cick to see more details</button>
+  <h3><span class="idNumber">{{quote.id}}</span></h3>
+  <p><span class="quoteFont">{{quote.name}}</span></p>
+  <p><span class="blue">{{quote.userQuote}}</span></p>
+  <button class="ntn btn-succes btn-sm"  (click)='toogleDetails(i)'>cick to see more details</button>
 
   <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
-
 </div>
 </div>
 <div class="row">

@@ -8,12 +8,12 @@ import {Quotes} from '../quotes'
 })
 export class QuotesComponent implements OnInit {
     quotes = [
-  new Quotes(1,'There is nothing permanent except change','Find an online version and watch merlin find his son','Heraclitus',new Date(2018,3,14) ),
-  new Quotes(2,'You cannot shake hands with a clenched fist','I have to buy cookies for the parrot','Indira Gandthi',new Date(2018,6,9) ),
-  new Quotes(3, 'Learning never exhausts the mind','Diana has her birthday coming up soon','Leonardo da Vinci',new Date(2018,1,12) ),
-  new Quotes(4, 'If you cannot do great things do small things in a great way','Pupper likes expensive sancks', 'Napoleon Hill',new Date(2018,0,18) ),
-  new Quotes(5, 'The supreme art of war is to subdue your enemy without fighting','Damn math', 'Sun Tzu',new Date(2018,2,14) ),
-  new Quotes(6, 'You cannot blame gravity for falling in love',' am an evil overlord','ALbert Einstein',new Date(2018,3,14) ),
+  new Quotes(1,'There is nothing permanent except change','Heraclitus','niKlaus peter',new Date(2018,3,14) ),
+  new Quotes(2,'You cannot shake hands with a clenched fist','Indira Gandhi','niklaus peter',new Date(2018,6,9) ),
+  new Quotes(3, 'Learning never exhausts the mind','Leonardo da Vinci','niKlaus peter',new Date(2018,1,12) ),
+  new Quotes(4, 'If you cannot do great things do small things in a great way','Napoleon Hill', 'niKlaus peter',new Date(2018,0,18) ),
+  new Quotes(5, 'The supreme art of war is to subdue your enemy without fighting','Sun Tzu', 'niKlaus peter',new Date(2018,2,14) ),
+  new Quotes(6, 'You cannot blame gravity for falling in love',' Albert Einstein','niKlaus peter',new Date(2018,3,14) ),
     ]
     toogleDetails(index){
        this.quotes[index].showDescription = !this.quotes[index].showDescription;

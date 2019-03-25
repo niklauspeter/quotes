@@ -1,5 +1,5 @@
 <p>
-  please fill in the quote-form below in fields as required!
+  Fill in the quote-form below to add your own quotes
 </p>
 <div class="container-fluid">
     <div class="row">
@@ -8,16 +8,17 @@
             <div class="form-group">
 
                 <label for="Quoter">Enter Authors Name</label>
-                <input type="text" required class="form-control" id="userQuote" [(ngModel)]="newQuote.userQuote" userQuote="userQuote" #userQuote="ngModel" required>
+                <input type="text" required class="form-control" id="userQuote" [(ngModel)]="newQuote.userQuote" name="userQuote" #userQuote="ngModel" >
                 <div [hidden]="userQuote.valid || userQuote.pristine" class="alert alert-danger">
                    <p> authors name is Required</p>
                </div>
+               display {{newQuote.userQuote}}
 
             </div>
             <div class="form-group">
 
                 <label for="description">Enter Quoters Name</label>
-                <input type="text" required class="form-control" id="description"  [(ngModel)]="newQuote.description" description="description" #description="ngModel" required>
+                <input type="text" required class="form-control" id="description"  [(ngModel)]="newQuote.description" name="description" #description="ngModel" required>
                 <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
                    <p> your name is Required</p>
                </div>
@@ -27,13 +28,13 @@
                 <label for="name">Insert Quote</label>
                 <textarea class="form-control" id="name" rows="3" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required></textarea>
                 <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                   <p> Name is Required</p>
+                   <p> Quote is Required</p>
                </div>
 Display {{newQuote.name}}
             </div>
             <div class="form-group">
                 <label for="complete">Enter date Posted :</label>
-                <input type='date' id="completeDate" [(ngModel)]="newQuote.completeDate" completeDate="completeDate" #completeDate="ngModel" required>
+                <input type='date' id="completeDate" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
                 <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
                 <p> Date of posting is Required</p>
 
