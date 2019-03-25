@@ -1,0 +1,12 @@
+#header{
+  color: white;
+  background-image: url("image/background.jpg");
+  height:300px;
+}
+.header-title.h1{
+ text-align: center;
+ margin-top: 50px;
+}
+h1{
+  font-family: 'Acme', sans-serif;
+}
